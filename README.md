@@ -25,7 +25,7 @@ A sleek, tech-forward control panel for [OpenClaw](https://news-openclaw.smzdm.c
 npm install
 npm run build
 npm start
-# open http://127.0.0.1:17890
+# open http://127.0.0.1:18790
 ```
 
 Or in dev:
@@ -33,7 +33,7 @@ Or in dev:
 ```bash
 npm install
 npm run dev
-# web at http://127.0.0.1:5173, API at http://127.0.0.1:17890
+# web at http://127.0.0.1:5173, API at http://127.0.0.1:18790
 ```
 
 ## Architecture

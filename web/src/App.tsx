@@ -48,7 +48,7 @@ export default function App() {
         ))}
         <div className="footer">
           <div>◉ LOCAL 127.0.0.1</div>
-          <div>port <span className="mono">17890</span></div>
+          <div>port <span className="mono">18790</span></div>
           <div className="dim">claw // v0.1</div>
         </div>
       </aside>
