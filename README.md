@@ -23,8 +23,8 @@
 ## 开发
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 - 前端：`http://127.0.0.1:4173`
@@ -33,7 +33,7 @@ npm run dev
 ## 构建
 
 ```bash
-npm run build
+pnpm build
 node dist/server/server/index.js
 ```
 

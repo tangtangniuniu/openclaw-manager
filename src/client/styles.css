@@ -96,6 +96,32 @@ textarea {
   margin-bottom: 1.8rem;
 }
 
+.hero-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.lang-switch {
+  display: inline-flex;
+  padding: 0.25rem;
+  border: 1px solid rgba(123, 228, 255, 0.2);
+  background: rgba(8, 11, 14, 0.72);
+}
+
+.lang-button {
+  min-width: 92px;
+  padding: 0.65rem 0.9rem;
+  border: 0;
+  background: transparent;
+}
+
+.lang-button.active {
+  background: linear-gradient(180deg, rgba(123, 228, 255, 0.18), rgba(123, 228, 255, 0.08));
+  color: var(--electric);
+}
+
 .eyebrow {
   margin: 0 0 0.5rem;
   letter-spacing: 0.24em;
@@ -298,6 +324,11 @@ label {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .hero-controls {
+    align-items: stretch;
+    width: 100%;
+  }
 }
 
 @media (max-width: 640px) {
@@ -314,4 +345,3 @@ label {
     width: 100%;
   }
 }
-
