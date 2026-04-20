@@ -1,0 +1,12 @@
+node_modules
+dist
+.vite
+coverage
+*.log
+.env
+.env.local
+.codex
+tmp
+data/backups
+data/runtime
+
