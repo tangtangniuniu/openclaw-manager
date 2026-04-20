@@ -16,7 +16,16 @@ import { createSnapshot, listSnapshots, restoreSnapshot, deleteSnapshot } from "
 export const api = Router();
 
 const ah = (fn: (req: Request, res: Response) => Promise<any> | any) => (req: Request, res: Response, next: NextFunction) => {
-  Promise.resolve(fn(req, res)).catch(next);
+  Promise.resolve(fn(req, res))
+    .then((value) => {
+      if (res.headersSent) return;
+      if (value === undefined) {
+        res.status(204).end();
+      } else {
+        res.json(value);
+      }
+    })
+    .catch(next);
 };
 
 api.get(
